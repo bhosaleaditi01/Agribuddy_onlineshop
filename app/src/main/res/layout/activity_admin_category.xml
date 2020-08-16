@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+
+        <ImageView
+            android:id="@+id/fruits"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fruits" />
+
+        <ImageView
+            android:id="@+id/egg"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/egg" />
+
+        <ImageView
+            android:id="@+id/vegetables"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/vegetables" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="60dp">
+
+
+
+        <ImageView
+            android:id="@+id/leafyvegetable"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/leafyvegetable"
+            />
+
+        <ImageView
+            android:id="@+id/cowmilk"
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cowmilk" />
+
+        <ImageView
+            android:id="@+id/buffalomilk"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/buffalomilk"
+            android:layout_marginStart="50dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "331864241981",
+    "firebase_url": "https://onlineshop-ebaef.firebaseio.com",
+    "project_id": "onlineshop-ebaef",
+    "storage_bucket": "onlineshop-ebaef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331864241981:android:78eec3d5a643e31a66b754",
+        "android_client_info": {
+          "package_name": "com.example.onlineshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331864241981-73pqt3h1kkco3hpjdnstd39o56gjcbb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onlineshop",
+            "certificate_hash": "d20fbc5b1bae160a749062bd3d08485c8e873ef5"
+          }
+        },
+        {
+          "client_id": "331864241981-n8br45qe43n68v5b23ahkpho2br4le51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Y3A6gXmeL60so7cyWXV60ilg2i3iOmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331864241981-n8br45qe43n68v5b23ahkpho2br4le51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
