@@ -24,14 +24,14 @@ import com.rey.material.widget.CheckBox;
 
 import io.paperdb.Paper;
 
-public class LoginActivity extends AppCompatActivity
+public class Logindiff extends AppCompatActivity
 {
     private EditText InputPhoneNumber, InputPassword;
     private Button LoginButton;
     private ProgressDialog loadingBar;
     private TextView AdminLink, NotAdminLink;
 
-    private String parentDbName = "Users";
+    private String parentDbName = "Admins";
     private CheckBox chkBoxRememberMe;
 
 
@@ -45,7 +45,6 @@ public class LoginActivity extends AppCompatActivity
         LoginButton = (Button) findViewById(R.id.login_btn);
         InputPassword = (EditText) findViewById(R.id.login_password_input);
         InputPhoneNumber = (EditText) findViewById(R.id.login_phone_number_input);
-
         loadingBar = new ProgressDialog(this);
 
 
@@ -117,24 +116,23 @@ public class LoginActivity extends AppCompatActivity
                     {
                         if (usersData.getPassword().equals(password))
                         {
-
-                                Toast.makeText(LoginActivity.this, "Welcome Admin, you are logged in Successfully...", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Logindiff.this, "Welcome User, you are logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(LoginActivity.this, AdminCategoryActivity.class);
+                                Intent intent = new Intent(Logindiff.this, Trial.class);
                                 startActivity(intent);
 
                         }
                         else
                         {
                             loadingBar.dismiss();
-                            Toast.makeText(LoginActivity.this, "Password is incorrect.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Logindiff.this, "Password is incorrect.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
                 else
                 {
-                    Toast.makeText(LoginActivity.this, "Account with this " + phone + " number do not exists.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Logindiff.this, "Account with this " + phone + " number do not exists.", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                 }
             }

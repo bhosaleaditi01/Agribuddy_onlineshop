@@ -23,7 +23,7 @@ import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button joinNowButton, loginButton;
+    private Button joinNowButton, loginButton,joinNowButton1;
     private ProgressDialog loadingBar;
 
 
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity
 
         joinNowButton = (Button) findViewById(R.id.main_join_now_btn);
         loginButton = (Button) findViewById(R.id.main_login_btn);
+        joinNowButton1 = (Button) findViewById(R.id.main_join);
         loadingBar = new ProgressDialog(this);
 
 
@@ -57,6 +58,15 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view)
             {
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        joinNowButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(MainActivity.this, RegisterUser.class);
                 startActivity(intent);
             }
         });
